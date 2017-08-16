@@ -1,1 +1,1 @@
-wordpress-theme-vip-languages
+# wp-theme

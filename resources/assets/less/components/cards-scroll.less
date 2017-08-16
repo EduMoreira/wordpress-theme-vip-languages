@@ -1,0 +1,28 @@
+.scroll {
+  overflow: hidden;
+  display: flex;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  justify-content: space-between;
+  -webkit-overflow-scrolling: touch;
+  -ms-overflow-style: -ms-autohiding-scrollbar;
+
+  .card {
+    min-width: 45%;
+    border: none;
+    border-radius: 0;
+    flex: 0 0 auto;
+    background-color: transparent;
+
+    .background{
+      height: 22rem;
+    }
+  }
+}
+
+@media (max-width: @screen-sm-max){
+  
+  .card {
+    min-width: 70%;
+  }
+}

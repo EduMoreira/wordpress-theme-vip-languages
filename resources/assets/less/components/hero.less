@@ -1,0 +1,29 @@
+.hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  padding-top: @header-xs-height/2;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  overflow: hidden;
+  color: #ffffff;
+  background-color: rgba(87,87,87,1);
+
+  h1, h2, h3, h4, h5, h6 {
+    color: #ffffff;
+  }
+
+  .content {
+    text-align: center;
+  }
+
+  &.mini {
+    height: 60vh;
+  }
+
+  &.medium {
+    height: 80vh;
+  }
+}

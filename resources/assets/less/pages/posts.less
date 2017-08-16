@@ -1,0 +1,61 @@
+section#posts{
+    min-height: 70vh;
+    padding-bottom: 50px;
+    .background{
+        background-color: @blue-500;
+        border-radius: 5px;
+        height: 20rem;
+    }
+    .background:hover{
+        box-shadow: @box-shadow;
+    }
+    .col-md-3{
+        margin-top: 15px;
+        margin-bottom: 15px;
+        .background{
+            height: 300px;
+        }
+        .content{
+            width: 100%;
+            margin-right: 5px;
+            h1,h2,.article_min,.author{
+                text-align: center;
+                color: white;
+                font-size: 14px;
+            }
+        }
+    }
+    .col-md-2{
+        margin-top: 15px;
+        margin-bottom: 15px;
+        .background{
+            height: 240px;
+        }
+        .content{
+            width: 100%;
+        }
+    }
+}
+// Small and extra-small devices specific rules
+@media (max-width: @screen-sm-max) {
+    section#posts{
+        .background{
+            background-color: @blue-500;
+            border-radius: 5px;
+            height: 15rem;
+        }
+        h1{
+            font-size: 10px;
+        }
+        .col-md-3{
+            .background{
+                height: 240px;
+            }
+        }
+        .col-md-2{
+            .background{
+                height: 180px;
+            }
+        }
+    }
+}

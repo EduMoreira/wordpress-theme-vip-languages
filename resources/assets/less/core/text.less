@@ -1,0 +1,95 @@
+*, body{
+    font-size: 1.2rem;
+
+    .screen-sm({
+        font-size: 1rem;
+    });
+}
+
+a{
+    color: @blue-a200;
+}
+
+a:hover{
+    color: @blue-700;
+}
+
+h1{
+    font-size: 4.5rem;
+    font-weight: 900;
+}
+
+h2{
+    font-size: 3rem;
+}
+
+h3{
+    font-size: 2rem;
+    font-weight: 900;
+}
+
+h4{
+    font-size: 1.3rem;
+    font-weight: 700;
+}
+
+h5{
+    font-size: 2rem;
+}
+
+h6{
+    font-size: 1.8rem;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: @sans-serif-font;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: #000000;
+
+    &+p, &+ul {
+        margin-top: 1.5rem;
+    }
+}
+  
+p {
+    font-family: @serif-font;
+    margin-bottom: 2rem;
+    line-height: 1.6rem;
+  
+    &+h1, +h2, +h3, +h4, +h5, +h6 {
+      margin-top: 3rem;
+    }
+  
+    &:last-child {
+      margin-bottom: 0;
+    }
+}
+  
+strong {
+    font-weight: 700;
+}
+
+img.alignright {
+    float:right; margin:0 0 1em 1em;
+}
+
+img.alignleft {
+    float:left; margin:0 1em 1em 0;
+}
+
+img.aligncenter {
+    display: block; margin-left: auto; margin-right: auto;
+}
+
+a img.alignright {
+    float:right; margin:0 0 1em 1em;
+}
+
+a img.alignleft {
+    float:left; margin:0 1em 1em 0;
+}
+
+a img.aligncenter {
+    display: block; margin-left: auto; margin-right: auto;
+}

@@ -1,0 +1,55 @@
+.form-group {
+	
+	select.form-control {
+		appearance: none;
+		-moz-appearance: none;
+		-webkit-appearance: none;
+		background-image: url('img/caret.png');
+		background-repeat: no-repeat;
+		background-size: 8px;
+		background-position: right 10px bottom 18px;
+	}
+
+	.form-control {
+		border-color: #e1e1e1;
+		background-color: #f7f7f9;
+		box-shadow: none;
+		transition: border-color 400ms ease;
+		-webkit-appearance: none;
+
+		&:not(textarea) {
+			height: 43px;
+		}
+
+		&:focus {
+			border-color: #999999;
+		}
+	}
+
+	label {
+		font-size: 0.8rem;
+		margin: 0 0 3px 1px;
+		text-transform: uppercase;
+	}
+
+	&.required {
+		label {
+			&:after {
+				position: relative;
+				left: 3px;
+				content: '*';
+				color: @cdt-error-color;
+			}
+		}
+	}
+
+	&.has-error {
+		.form-control {
+			border-color: @cdt-error-color;
+		}
+
+		.error-message {
+			color: @cdt-error-color;
+		}
+	}
+}

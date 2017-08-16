@@ -1,0 +1,30 @@
+#hero-carousel {
+  position: relative;
+  .item {
+    position: absolute;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+    pointer-events: none;
+    text-align: center;
+    opacity: 0;
+    transition-property: opacity;
+    transition: 1000ms ease;
+    background-position: center;
+
+    .content {
+      margin-top: 6rem;
+      width: 80%;
+    }
+
+    &.active {
+      pointer-events: initial;
+      opacity: 1;
+      transition: 300ms ease;
+    }
+  }
+}
